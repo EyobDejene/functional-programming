@@ -32,30 +32,26 @@ function cleanData(dataSource, rowToEdit) {
 }
 
 
-
 // display table with row
 //source: https://code-boxx.com/create-table-from-array-javascript/
-function displayData(array){
+function displayData(array) {
 
-        let data = array
-
-        // DRAW THE HTML TABLE
-        let perrow = 1, // 3 items per row
-            html = "<table><tr>"
-
-        // Loop through array and add table cells
-        for (let i=0; i<data.length; i++) {
-            html += "<td>" + data[i] + "</td>"
-            // Break into next row
-            let next = i+1;
-            if (next%perrow==0 && next!=data.length) {
-                html += "</tr><tr>"
-            }
+    let data = array
+    // DRAW THE HTML TABLE
+    let perrow = 1, // 3 items per row
+        html = "<table><tr>"
+    // Loop through array and add table cells
+    for (let i = 0; i < data.length; i++) {
+        html += "<td>" + data[i] + "</td>"
+        // Break into next row
+        let next = i + 1;
+        if (next % perrow == 0 && next != data.length) {
+            html += "</tr><tr>"
         }
-        html += "</tr></table>"
-
-        // ATTACH HTML TO CONTAINER
-        document.getElementById("container").innerHTML = html
+    }
+    html += "</tr></table>"
+    // ATTACH HTML TO CONTAINER
+    document.getElementById("container").innerHTML = html
 }
 
 
