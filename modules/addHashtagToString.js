@@ -1,8 +1,8 @@
 // add hashtag to vlaue
-export function addHashtag(array) {
-    let startWithCharacter = "#"
-    let replacementCharacter = "#"
+let startWithCharacter = "#"
+let replacementCharacter = "#"
 
+export function addHashtag(array) {
     let cleanArray = array
         .map(item => {
             if (!item.column.startsWith(startWithCharacter)) {

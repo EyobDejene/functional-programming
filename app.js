@@ -6,9 +6,8 @@ import {addHashtag} from './modules/addHashtagToString.js'
 
 // set dataSource
 const dataSource = 'data/enqete-raw.csv'
-
 // Set here the rowname to edit
-const rowToEdit = 'Kleur ogen (HEX code bijv.  #ff5733  )'
+const rowToEdit = 'Kleur haar (HEX code)'
 
 
 // run the code
