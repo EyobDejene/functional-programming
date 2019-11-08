@@ -3,7 +3,7 @@ let startWithCharacter = "#"
 let replacementCharacter = "#"
 
 export function addHashtag(array) {
-    let cleanArray = array
+    const cleanArray = array
         .map(item => {
             if (!item.column.startsWith(startWithCharacter)) {
                 if (item.column !== "null") {
